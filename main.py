@@ -166,7 +166,7 @@ def chat():
         try:
             query = input("\n質問> ").strip()
 
-            if query.lower() in ("exit", "quit", 'q'.'ｑ'):
+            if query.lower() in ("exit", "quit", 'q', 'ｑ'):
                 print("終了します")
                 break
 
