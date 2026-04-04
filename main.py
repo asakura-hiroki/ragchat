@@ -23,7 +23,10 @@ from langchain_ollama import OllamaLLM, OllamaEmbeddings
 OLLAMA_URL='http://192.168.1.64:11434'
 # 注意: モデル変更時はベクトルDBも再構築必要です。
 # --- gemma3 ---
-LLM_MODEL='gemma3:12b'
+#LLM_MODEL='gemma3:12b'
+#EMBED_MODEL='embeddinggemma:latest'
+# --- gemma4 ---
+LLM_MODEL='gemma4:26b'
 EMBED_MODEL='embeddinggemma:latest'
 # --- llama3.1 ---
 #LLM_MODEL='llama3.1:8b'
@@ -163,7 +166,7 @@ def chat():
         try:
             query = input("\n質問> ").strip()
 
-            if query.lower() in ("exit", "quit", 'q'):
+            if query.lower() in ("exit", "quit", 'q'.'ｑ'):
                 print("終了します")
                 break
 
